@@ -54,4 +54,4 @@ GNU GPL-3
 
 1. Consulta de dados de endereço IP usando a api do Vírus Total.
 2. Pesquisa de nomes de usuários usando a ferramenta Sherlock.
-3. uso de proxying em operações de rede.
+3. Uso de proxying em operações de rede.
