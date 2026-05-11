@@ -34,7 +34,7 @@ Caso queira utilizar a busca de nicknames, você precisará do programa chamado 
 
 Comente a linha 
 
-> # strict_chain
+> strict_chain
 
 E descomente a linha
 
