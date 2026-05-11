@@ -28,6 +28,24 @@ Salve o arquivo e reinicie o Daemon do Tor.
 -  Void Linux
 > sudo sv restart tor
 
+### Necessidades extras
+
+Caso queira utilizar a busca de nicknames, você precisará do programa chamado `proxychains`, você pode encontrá-lo como `proxychains4` ou `proxychains-ng` em sua distribuição Linux. Para o correto funcionamento, altere as seguintes linhas no arquivo `/etc/proxychains.conf`:
+
+Comente a linha 
+
+> # strict_chain
+
+E descomente a linha
+
+> random_chain
+
+E por fim, adicione na última linha do arquivo o seguinte conteúdo:
+
+> socks5    127.0.0.1 9050
+
+No lugar de `9050` você deve colocar qual porta você abriu no arquivo de configuração `/etc/tor/torrc`.
+
 # Licença
 
 GNU GPL-3
